@@ -11,3 +11,6 @@ dependencies = [
     "fastapi==0.117.1",
     "uvicorn[standard]==0.37.0"
 ]
+
+[tool.ruff.lint]
+select = ["E", "W", "F", "B", "I"]
