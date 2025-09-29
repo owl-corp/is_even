@@ -22,7 +22,8 @@ FROM python:$python_version
 # .venv not put in /app so that it doesn't conflict with the dev
 # volume we use to avoid rebuilding image every code change locally
 COPY --from=builder /build /build
-ENV PATH="/build/.venv/bin:$PATH"
+ENV PATH="/build/.venv/bin:$PATH" \
+  PYTHONDONTWRITEBYTECODE=1
 
 WORKDIR /api
 
