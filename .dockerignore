@@ -4,4 +4,4 @@
 # Make exceptions for what's needed
 !is_even
 !pyproject.toml
-!poetry.lock
+!uv.lock
